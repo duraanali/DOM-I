@@ -58,10 +58,21 @@ btn.innerText = siteContent.cta.button;
 let midPage = document.getElementById("middle-img");
 midPage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+const mainMenu1 = document.querySelector('header nav');
+const newMenu1 = document.createElement('a');
+newMenu1.prepend(document.createTextNode('Awesome'));
+mainMenu1.prepend(newMenu1);
+
+const mainMenu = document.querySelector('header nav');
+const newMenu = document.createElement('a');
+newMenu.appendChild(document.createTextNode('Duraan'));
+mainMenu.appendChild(newMenu);
+
 let green = document.querySelectorAll("header nav a");
 green.forEach(aGreen => {
   aGreen.style.color = "green";
 });
+
 
 let topContentH4 = document.querySelectorAll('.main-content .top-content H4');
 topContentH4[0].textContent = siteContent['main-content']['features-h4']
