@@ -82,6 +82,14 @@ let topContentH4 = document.querySelectorAll(".main-content .top-content H4");
 topContentH4[0].textContent = siteContent["main-content"]["features-h4"];
 topContentH4[1].textContent = siteContent["main-content"]["about-h4"];
 
+topContentH4.forEach(titleColor => {
+  titleColor.style.color = "blue";
+});
+
+topContentH4.forEach(titleSize => {
+  titleSize.style.fontSize = "50px";
+});
+
 let topContentP = document.querySelectorAll(".main-content .top-content p");
 topContentP[0].textContent = siteContent["main-content"]["features-content"];
 topContentP[1].textContent = siteContent["main-content"]["about-content"];
@@ -92,6 +100,14 @@ let bottomContentH4 = document.querySelectorAll(
 bottomContentH4[0].textContent = siteContent["main-content"]["services-h4"];
 bottomContentH4[1].textContent = siteContent["main-content"]["product-h4"];
 bottomContentH4[2].textContent = siteContent["main-content"]["vision-h4"];
+
+bottomContentH4.forEach(titleColor => {
+  titleColor.style.color = "blue";
+});
+
+bottomContentH4.forEach(titleSize => {
+  titleSize.style.fontSize = "50px";
+});
 
 let bottomContentP = document.querySelectorAll(
   ".main-content .bottom-content p"
